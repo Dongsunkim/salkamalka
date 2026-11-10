@@ -1,0 +1,40 @@
+{
+  "name": "salka-malka",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "충동구매 전에 잠깐 맡겨두는 살까 말까 보관함",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "typecheck": "tsc --noEmit",
+    "build:web": "tsc --noEmit && vite build",
+    "build": "npm run build:web && ait build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@apps-in-toss/web-framework": "3.10.0",
+    "@emotion/react": "11.14.0",
+    "@toss/tds-mobile": "2.5.1",
+    "@toss/tds-mobile-ait": "2.5.1",
+    "lucide-react": "1.71.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.9",
+    "@types/node": "24.19.2",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "5.2.0",
+    "jsdom": "31.0.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.8",
+    "vitest": "4.1.12"
+  }
+}
